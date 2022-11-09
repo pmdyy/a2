@@ -11,7 +11,7 @@ long long fib(int n, int a = 0, int b = 1)
         return a;
     }
     else if ( n > lastindex){
-    return fib(n - 1, lastfib_2, lastfib_1 + lastfib_2b);
+    return fib(n - 1, lastfib_2, lastfib_1 + lastfib_2);
     }
     else{
     return fib(n - 1, b, a + b);
