@@ -32,6 +32,18 @@
 #ifndef TEMPLATES_HPP_
 #define TEMPLATES_HPP_
 
-// put templates here
+// Recursive function fibonacci
+// This function is a slightly modified version of the function provided
+// by Deitel & Associates, Inc.
+template <typename T> T fibonacci(T number) {
+  if ((0 == number) || (1 == number)) { // base cases
+    return number;
+  }
+
+  T a = fibonacci(number - 1);
+  T b = fibonacci(number - 2);
+
+  return a + b;
+}
 
 #endif /* TEMPLATES_HPP_ */
